@@ -1,7 +1,5 @@
-# TypeScript-Calculator
+# TypeScript-Calculator-Starter
 Create a Client side calculator app using typescript.
 
-
-Requirements
-* Function should take in a stringified number or a number (use typescript types to make this clear)
-* 
+* Follow the instructions in the TypeScript File
+* Make sure all variables and params have a declared type
