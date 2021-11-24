@@ -1,10 +1,13 @@
 var output = document.querySelector('.output');
+/*declare the following variables and types
+  num1 as number
+  num2 as number
+  operand as string
+  
+  Figure out how to set the values of num1 and num2 as the buttons are clicked
+  */
 document.querySelector('.calc').addEventListener('click', function (evt) {
     var button = evt.target;
-    /*declare the following variables and types
-    num1 as number
-    num2 as number
-    operand as string*/
     if (button.className.indexOf('num') !== -1) {
         console.log(button.innerHTML);
         output.value += button.innerHTML;
@@ -18,6 +21,7 @@ document.querySelector('.calc').addEventListener('click', function (evt) {
         var calculation = calculate( /*pass in params here*/);
         output.value = calculation.toString();
     }
+    /* create another condition to clear the value of the input when C is pressed*/
 });
 //create a function that takes in 2 numbers and a string (operand)
 function calculate( /*You fill in here*/) {
