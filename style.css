@@ -1,10 +1,23 @@
+@font-face {
+    font-family: "digital-clock-font";
+    src: url('./digital-7.ttf');
+}
+
 *{
     box-sizing: border-box;
+    font-family: digital-clock-font;
+}
+
+body {
+    background-image: url('./calc-background.jpeg');
+    background-size: auto;
 }
 
 .container{
     margin:20px auto;
     max-width: 500px;
+    border: 2px solid #111;
+    border-radius: 5px;
 }
 
 .row{
@@ -13,4 +26,45 @@
     justify-content: center;
 }
 
+.row button{
+    background: rgba(0,0,0,0.5);
+    border: 1px solid #111;
+    padding: 20px;
+    color: #eee;
+    border-radius: 5px;
+    font-size: 22px;
+    cursor: pointer;
+}
+
+.row input {
+    background: whitesmoke;
+    border: none;
+    box-shadow: none;
+    outline: none;
+
+    padding: 20px 10px;
+    width: 100%;
+    color: #333;
+    text-align: right;
+    font-size: 40px;
+    border-radius: 0;
+}
+
+.calc {
+    background : #23395d;
+}
+
+.calc-buttons{
+    padding: 20px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 15px;
+}
+
+.row .reset {
+    background: #3572db;
+}
+.row .equal {
+    background: #28d060;
+}
 /* Make this prettier! */
